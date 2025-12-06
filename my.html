@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>医起过医考 - 陪你轻松通关医考</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+        }
+
+        /* 页面渐变背景 + 居中布局 */
+        body {
+            /* 蓝白渐变（医疗行业适配色），支持不同浏览器兼容 */
+            background: linear-gradient(120deg, #e0f7fa, #b2ebf2, #80deea, #4dd0e1);
+            background-attachment: fixed; /* 渐变背景固定，滚动不重复 */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* 主标题样式 */
+        .main-title {
+            font-size: clamp(2.5rem, 8vw, 5rem); /* 响应式字体大小 */
+            color: #0277bd; /* 医疗蓝主色 */
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 700;
+            /* 文字阴影增强视觉效果 */
+            text-shadow: 0 2px 4px rgba(0, 0, 100, 0.1);
+            /* 文字渐变描边 */
+            -webkit-text-stroke: 1px rgba(0, 82, 155, 0.3);
+        }
+
+        /* 副标题/标语 */
+        .sub-title {
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            color: #01579b;
+            text-align: center;
+            margin-top: 10px;
+            line-height: 1.6;
+            max-width: 800px;
+        }
+
+        /* 装饰元素 */
+        .decor {
+            width: 120px;
+            height: 4px;
+            background: linear-gradient(90deg, #0288d1, #039be5);
+            border-radius: 2px;
+            margin: 30px 0;
+        }
+
+        /* 适配移动端 */
+        @media (max-width: 768px) {
+            .main-title {
+                margin-bottom: 15px;
+            }
+            .sub-title {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 装饰分割线 -->
+    <div class="decor"></div>
+    
+    <!-- 核心标题 -->
+    <h1 class="main-title">医起过医考</h1>
+    
+    <!-- 装饰分割线 -->
+    <div class="decor"></div>
+    
+    <!-- 辅助标语 -->
+    <p class="sub-title">
+        专业陪伴 · 高效备考 · 一次通关<br>
+        愿所有医考生都能顺利跨过备考难关，拿下证书！
+    </p>
+</body>
+</html>
